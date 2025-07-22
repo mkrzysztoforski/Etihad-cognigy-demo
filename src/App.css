@@ -41,6 +41,10 @@
   color: #888;
 }
 
+body ._bubble_jbjrn_1 {
+  white-space: normal!important;
+}
+
 /* RTL SPECIAL CLASS */
 .rtl * {
   direction: rtl !important;

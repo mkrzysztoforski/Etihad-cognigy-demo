@@ -4,8 +4,12 @@ import './App.css';
   
 function App() {
   const [searchParams] = useSearchParams();
-  const userId = searchParams.get('userid');
+  let userId = searchParams.get('userid');
   const sessionId = searchParams.get('sessionid');
+
+  if (userId && userId[0] === " ") {
+    userId = "+" + userId.slice(1);
+  }
 
   console.log("User ID:", userId);
   console.log("Session ID:", sessionId);
